@@ -14,7 +14,7 @@ require (
 	github.com/googleapis/gnostic v0.3.0 // indirect
 	github.com/hashicorp/golang-lru v0.5.3 // indirect
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
-	github.com/paipaoso/common 0.1.0
+	github.com/paipaoso/common v0.1.2
 	github.com/kubeflow/tf-operator v1.0.0-rc.0.0.20190916040037-5adee6f30c86
 	github.com/kubernetes-sigs/kube-batch v0.4.2
 	github.com/kubernetes-sigs/yaml v1.1.0
