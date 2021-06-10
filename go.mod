@@ -16,7 +16,7 @@ require (
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
 	github.com/paipaoso/common v0.1.2
 	github.com/kubeflow/tf-operator v1.0.0-rc.0.0.20190916040037-5adee6f30c86
-	github.com/kubernetes-sigs/kube-batch v0.4.2
+	github.com/kubernetes-sigs/kube-batch 
 	github.com/kubernetes-sigs/yaml v1.1.0
 	github.com/mailru/easyjson v0.0.0-20190626092158-b2ccc519800e // indirect
 	github.com/onrik/logrus v0.4.0
@@ -35,6 +35,7 @@ require (
 )
 
 replace (
+    github.com/kubernetes-sigs/kube-batch => github.com/paipsoso/kube-batch v0.5.1
 	k8s.io/api => k8s.io/api v0.15.9
 	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.15.9
 	k8s.io/apimachinery => k8s.io/apimachinery v0.15.10-beta.0
