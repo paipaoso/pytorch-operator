@@ -22,7 +22,7 @@ set -o nounset
 set -o pipefail
 
 SCRIPT_ROOT=$(dirname ${BASH_SOURCE})/..
-ROOT_PKG=github.com/kubeflow/pytorch-operator
+ROOT_PKG=github.com/paipaoso/pytorch-operator
 # Grab code-generator version from go.sum
 CODEGEN_VERSION=$(grep 'k8s.io/code-generator' go.sum | awk '{print $2}' | sed 's/\/go.mod//g' | head -1)
 CODEGEN_PKG=$(echo `go env GOPATH`"/pkg/mod/k8s.io/code-generator@${CODEGEN_VERSION}")
@@ -60,7 +60,7 @@ go build -o defaulter-gen ${CODEGEN_PKG}/cmd/defaulter-gen
 #                  k8s.io/kubernetes. The output-base is needed for the generators to output into the vendor dir
 #                  instead of the $GOPATH directly. For normal projects this can be dropped.
 ${CODEGEN_PKG}/generate-groups.sh "defaulter,deepcopy,client,informer,lister" \
- github.com/kubeflow/pytorch-operator/pkg/client github.com/kubeflow/pytorch-operator/pkg/apis \
+ github.com/paipaoso/pytorch-operator/pkg/client github.com/kubeflow/pytorch-operator/pkg/apis \
  pytorch:v1 \
  --output-base "${TEMP_DIR}" \
  --go-header-file ${SCRIPT_ROOT}/hack/boilerplate/boilerplate.go.txt

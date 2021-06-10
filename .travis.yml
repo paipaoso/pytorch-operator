@@ -3,7 +3,7 @@ language: go
 go:
   - "1.13"
 
-go_import_path: github.com/kubeflow/pytorch-operator
+go_import_path: github.com/paipaoso/pytorch-operator
 
 install:
   # get coveralls.io support

@@ -23,8 +23,8 @@ import (
 	"github.com/onrik/logrus/filename"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/kubeflow/pytorch-operator/cmd/pytorch-operator.v1/app"
-	"github.com/kubeflow/pytorch-operator/cmd/pytorch-operator.v1/app/options"
+	"github.com/paipaoso/pytorch-operator/cmd/pytorch-operator.v1/app"
+	"github.com/paipaoso/pytorch-operator/cmd/pytorch-operator.v1/app/options"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 

@@ -9,9 +9,9 @@ import (
 	"time"
 
 	"github.com/gogo/protobuf/proto"
-	pyv1 "github.com/kubeflow/pytorch-operator/pkg/apis/pytorch/v1"
-	torchjobclient "github.com/kubeflow/pytorch-operator/pkg/client/clientset/versioned"
-	"github.com/kubeflow/pytorch-operator/pkg/util"
+	pyv1 "github.com/paipaoso/pytorch-operator/pkg/apis/pytorch/v1"
+	torchjobclient "github.com/paipaoso/pytorch-operator/pkg/client/clientset/versioned"
+	"github.com/paipaoso/pytorch-operator/pkg/util"
 	common "github.com/paipaoso/common/job_controller/api/v1"
 	log "github.com/sirupsen/logrus"
 	v1 "k8s.io/api/core/v1"

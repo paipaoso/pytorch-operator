@@ -27,10 +27,10 @@ import (
 	"k8s.io/kubernetes/pkg/controller"
 
 	common "github.com/paipaoso/common/job_controller/api/v1"
-	"github.com/kubeflow/pytorch-operator/cmd/pytorch-operator.v1/app/options"
-	pyv1 "github.com/kubeflow/pytorch-operator/pkg/apis/pytorch/v1"
-	jobclientset "github.com/kubeflow/pytorch-operator/pkg/client/clientset/versioned"
-	"github.com/kubeflow/pytorch-operator/pkg/common/util/v1/testutil"
+	"github.com/paipaoso/pytorch-operator/cmd/pytorch-operator.v1/app/options"
+	pyv1 "github.com/paipaoso/pytorch-operator/pkg/apis/pytorch/v1"
+	jobclientset "github.com/paipaoso/pytorch-operator/pkg/client/clientset/versioned"
+	"github.com/paipaoso/pytorch-operator/pkg/common/util/v1/testutil"
 	"github.com/kubeflow/tf-operator/pkg/control"
 )
 

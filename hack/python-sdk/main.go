@@ -23,7 +23,7 @@ import (
 	"strings"
 
 	"github.com/go-openapi/spec"
-	pytorchjob "github.com/kubeflow/pytorch-operator/pkg/apis/pytorch/v1"
+	pytorchjob "github.com/paipaoso/pytorch-operator/pkg/apis/pytorch/v1"
 	"k8s.io/klog"
 	"k8s.io/kube-openapi/pkg/common"
 )
@@ -66,7 +66,7 @@ func main() {
 }
 
 func swaggify(name string) string {
-	name = strings.Replace(name, "github.com/kubeflow/pytorch-operator/pkg/apis/pytorch/", "", -1)
+	name = strings.Replace(name, "github.com/paipaoso/pytorch-operator/pkg/apis/pytorch/", "", -1)
 	name = strings.Replace(name, "github.com/paipaoso/common/job_controller/api/", "", -1)
 	name = strings.Replace(name, "github.com/kubernetes-sigs/kube-batch/pkg/client/clientset/", "", -1)
 	name = strings.Replace(name, "k8s.io/api/core/", "", -1)

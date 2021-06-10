@@ -29,7 +29,7 @@ setuptools.setup(
   author="Kubeflow Authors",
   author_email='hejinchi@cn.ibm.com',
   license='Apache License Version 2.0',
-  url='https://github.com/kubeflow/pytorch-operator/sdk/python',
+  url='https://github.com/paipaoso/pytorch-operator/sdk/python',
   description='PyTorchJob Python SDK',
   long_description='PyTorchJob Python SDK',
   packages=setuptools.find_packages(
