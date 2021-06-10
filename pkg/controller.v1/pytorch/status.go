@@ -25,7 +25,7 @@ import (
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 
 	pyv1 "github.com/kubeflow/pytorch-operator/pkg/apis/pytorch/v1"
-	common "github.com/kubeflow/common/job_controller/api/v1"
+	common "github.com/paipaoso/common/job_controller/api/v1"
 	pylogger "github.com/kubeflow/tf-operator/pkg/logger"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
