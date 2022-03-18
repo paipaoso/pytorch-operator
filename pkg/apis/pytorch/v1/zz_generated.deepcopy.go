@@ -122,6 +122,12 @@ func (in *PyTorchJobSpec) DeepCopyInto(out *PyTorchJobSpec) {
 			(*out)[key] = outVal
 		}
 	}
+	if in.Suspend != nil {
+		in, out := &in.Suspend, &out.Suspend
+		*out = new(bool)
+		**out = **in
+	}
+
 	return
 }
 
